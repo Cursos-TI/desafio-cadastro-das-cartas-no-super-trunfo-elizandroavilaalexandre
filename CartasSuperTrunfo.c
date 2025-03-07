@@ -9,6 +9,7 @@ int main(){
     float area1, area2; // conforme dados do IBGE em 2022
     float pib1, pib2; // conforme dados do IBGE em 2022
     int pontoturistico1, pontoturistico2; //pesquisas na internet
+    float densidade, PIB_per_capta;
 
     //Obtendo as características da carta 01
 
@@ -37,6 +38,9 @@ int main(){
     printf("Cidade: %s\n População: %d\n",cidade1, populacao1); 
     printf("Área: %f\n PIB %f\n", area1, pib1);
     printf("Pontos turísticos %d\n", pontoturistico1);        
+    densidade = populacao1 / area1;
+    printf("A densidade demográfica da cidade de %s é: %f", cidade1, densidade);
+    printf("O PIB Per capta da cidade de %s é: %.2f ", cidade1, PIB_per_capta);
     
     //Obtendo as características da carta 02
 
@@ -71,3 +75,4 @@ int main(){
     
     return 0;
 }
+
