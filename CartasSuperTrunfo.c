@@ -37,14 +37,17 @@ int main(){
     printf("Carta 1:\n Estado:  %s\n Código da carta: %s\n", estado1, codigo1);
     printf("Cidade: %s\n População: %d\n",cidade1, populacao1); 
     printf("Área: %f\n PIB %f\n", area1, pib1);
-    printf("Pontos turísticos %d\n", pontoturistico1);        
+    printf("Pontos turísticos %d\n", pontoturistico1);
+
     densidade = populacao1 / area1;
-    printf("A densidade demográfica da cidade de %s é: %f", cidade1, densidade);
-    printf("O PIB Per capta da cidade de %s é: %.2f ", cidade1, PIB_per_capta);
+    PIB_per_capta = pib1/populacao1;
+
+    printf("A densidade demográfica da cidade de %s é: %0.2f\n", cidade1, densidade);
+    printf("O PIB Per capta da cidade de %s é: %.2f\n", cidade1, PIB_per_capta);
     
     //Obtendo as características da carta 02
-
-    printf("Caracterísitcas da carta 2\n");
+    
+    printf("Características da carta 2\n");
     
     printf("Digite o estado: \n");
     scanf("%s", estado2);
@@ -66,12 +69,17 @@ int main(){
 
     printf("digite o total de pontos turísticos: \n");
     scanf("%d", &pontoturistico2);
+    
+    densidade = populacao2/ area2;
+    PIB_per_capta = pib2/populacao2;
+
 
     printf("Carta 2:\n Estado:  %s\n Código da carta: %s\n", estado2, codigo2);
     printf("Cidade: %s\n População: %d\n",cidade2, populacao2); 
     printf("Área: %f\n PIB %f\n", area2, pib2);
     printf("Pontos turísticos %d\n", pontoturistico2);        
-
+    printf("A densidade demográfica da cidade de %s é: %0.2f\n", cidade2, densidade);
+    printf("O PIB Per capta da cidade de %s é: %.2f\n", cidade2, PIB_per_capta);
     
     return 0;
 }
